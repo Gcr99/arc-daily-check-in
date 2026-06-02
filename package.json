@@ -1,0 +1,43 @@
+{
+  "name": "arc-daily-check-in",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A beginner-friendly Web3 dApp for GM, GN, and daily check-ins on Arc Testnet.",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:arc": "hardhat run scripts/deploy.ts --network arcTestnet"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.8",
+    "@tanstack/react-query": "^5.90.0",
+    "lucide-react": "^0.468.0",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "viem": "^2.21.53",
+    "wagmi": "^2.13.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/chai": "^4.3.20",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "chai": "^4.5.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^16.1.6",
+    "hardhat": "2.26.3",
+    "tailwindcss": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
